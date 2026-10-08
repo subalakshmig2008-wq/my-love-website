@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For My Loosu ❤️</title>
+
+
+<style>
+
+/* =========================================
+   BASIC
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+    color:white;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            #4d1738,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            #42142f,
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #080208,
+            #190611,
+            #080208
+        );
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.stars{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+.star{
+
+    position:absolute;
+
+    width:3px;
+
+    height:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    opacity:.7;
+
+    animation:twinkle 2s infinite alternate;
+}
+
+.star:nth-child(1){
+    top:10%;
+    left:15%;
+}
+
+.star:nth-child(2){
+    top:25%;
+    left:75%;
+    animation-delay:.5s;
+}
+
+.star:nth-child(3){
+    top:40%;
+    left:30%;
+    animation-delay:.8s;
+}
+
+.star:nth-child(4){
+    top:60%;
+    left:85%;
+    animation-delay:1s;
+}
+
+.star:nth-child(5){
+    top:75%;
+    left:10%;
+    animation-delay:1.4s;
+}
+
+.star:nth-child(6){
+    top:15%;
+    left:50%;
+    animation-delay:.7s;
+}
+
+.star:nth-child(7){
+    top:85%;
+    left:60%;
+    animation-delay:.3s;
+}
+
+.star:nth-child(8){
+    top:50%;
+    left:55%;
+    animation-delay:1.2s;
+}
+
+.star:nth-child(9){
+    top:30%;
+    left:5%;
+    animation-delay:.4s;
+}
+
+.star:nth-child(10){
+    top:90%;
+    left:90%;
+    animation-delay:.9s;
+}
+
+
+@keyframes twinkle{
+
+    from{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.4);
+    }
+}
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+.hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:1;
+}
+
+.heart{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:20px;
+
+    opacity:.7;
+
+    animation:floatHeart linear infinite;
+}
+
+.heart:nth-child(1){
+    left:10%;
+    animation-duration:10s;
+}
+
+.heart:nth-child(2){
+    left:30%;
+    animation-duration:13s;
+    animation-delay:2s;
+}
+
+.heart:nth-child(3){
+    left:55%;
+    animation-duration:11s;
+    animation-delay:4s;
+}
+
+.heart:nth-child(4){
+    left:75%;
+    animation-duration:14s;
+    animation-delay:1s;
+}
+
+.heart:nth-child(5){
+    left:90%;
+    animation-duration:12s;
+    animation-delay:5s;
+}
+
+
+@keyframes floatHeart{
+
+    0%{
+        transform:
+            translateY(0)
+            scale(.8);
+
+        opacity:0;
+    }
+
+    20%{
+        opacity:.8;
+    }
+
+    80%{
+        opacity:.7;
+    }
+
+    100%{
+        transform:
+            translateY(-110vh)
+            scale(1.5)
+            rotate(20deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================================
+   PAGES
+========================================= */
+
+.page{
+
+    min-height:100vh;
+
+    width:100%;
+
+    display:none;
+
+    position:relative;
+
+    z-index:2;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px 18px;
+}
+
+.page.active{
+
+    display:flex;
+
+    animation:pageIn .7s ease;
+}
+
+
+@keyframes pageIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px)
+            scale(.98);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card{
+
+    width:min(900px,95%);
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(0,0,0,.5),
+
+        inset 0 0 30px
+        rgba(255,255,255,.03);
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.small-title{
+
+    color:#ff9fc7;
+
+    font-size:17px;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+
+h1{
+
+    font-size:
+        clamp(
+            36px,
+            7vw,
+            65px
+        );
+
+    margin-bottom:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #ff9bc5,
+            #fff
+        );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+
+h2{
+
+    font-size:
+        clamp(
+            28px,
+            5vw,
+            45px
+        );
+
+    margin-bottom:20px;
+}
+
+
+p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#f4dce8;
+}
+
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#f5c8db;
+
+    margin-bottom:30px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn{
+
+    border:none;
+
+    outline:none;
+
+    padding:14px 30px;
+
+    margin:10px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f91,
+            #c9185b
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(255,58,130,.3);
+
+    transition:.3s ease;
+}
+
+
+.btn:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.04);
+
+    box-shadow:
+        0 15px 35px
+        rgba(255,58,130,.5);
+}
+
+
+.btn:active{
+
+    transform:scale(.96);
+}
+
+
+.btn.secondary{
+
+    background:
+        rgba(255,255,255,.1);
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro-heart{
+
+    font-size:75px;
+
+    margin-bottom:15px;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+
+/* =========================================
+   PHOTOS
+========================================= */
+
+.photo-text{
+
+    max-width:700px;
+
+    margin:
+        0 auto 30px;
+}
+
+
+.photos{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+
+    max-width:700px;
+
+    margin:
+        0 auto 30px;
+}
+
+
+.photo-box{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background:
+        rgba(255,255,255,.05);
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.4);
+
+    transition:.4s ease;
+}
+
+
+.photo-box:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+}
+
+
+.photo-box img{
+
+    width:100%;
+
+    height:400px;
+
+    object-fit:cover;
+
+    display:block;
+
+    cursor:pointer;
+
+    transition:.5s ease;
+}
+
+
+.photo-box:hover img{
+
+    transform:scale(1.05);
+}
+
+
+/* =========================================
+   LOVE LETTER
+========================================= */
+
+.letter{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:left;
+
+    background:
+        rgba(0,0,0,.15);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+}
+
+
+.letter p{
+
+    white-space:pre-line;
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.video-container{
+
+    max-width:800px;
+
+    margin:25px auto;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.5);
+}
+
+
+.video-container video{
+
+    width:100%;
+
+    display:block;
+
+    max-height:70vh;
+
+    background:black;
+}
+
+
+/* =========================================
+   PROPOSAL
+========================================= */
+
+.ring{
+
+    font-size:75px;
+
+    margin-bottom:20px;
+
+    animation:
+        ringMove 2s
+        infinite
+        ease-in-out;
+}
+
+
+@keyframes ringMove{
+
+    0%,100%{
+
+        transform:
+            rotate(-5deg)
+            translateY(0);
+    }
+
+    50%{
+
+        transform:
+            rotate(5deg)
+            translateY(-8px);
+    }
+}
+
+
+.proposal-text{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+    color:#ffd4e4;
+}
+
+
+/* =========================================
+   FEELINGS
+========================================= */
+
+.feeling-box{
+
+    max-width:650px;
+
+    margin:30px auto;
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.final-heart{
+
+    font-size:80px;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+
+.final-text{
+
+    max-width:700px;
+
+    margin:20px auto;
+}
+
+
+/* =========================================
+   IMAGE MODAL
+========================================= */
+
+.image-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+        rgba(0,0,0,.9);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:100;
+}
+
+
+.image-modal.active{
+
+    display:flex;
+}
+
+
+.image-modal img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    object-fit:contain;
+
+    border-radius:15px;
+}
+
+
+.close-modal{
+
+    position:absolute;
+
+    top:20px;
+
+    right:25px;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    color:white;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:700px){
+
+    .card{
+
+        padding:
+            35px 20px;
+
+        width:96%;
+    }
+
+
+    .photos{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .photo-box img{
+
+        height:360px;
+    }
+
+
+    p{
+
+        font-size:16px;
+    }
+
+
+    .letter{
+
+        padding:22px;
+    }
+
+
+    .btn{
+
+        width:90%;
+
+        max-width:300px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     BACKGROUND STARS
+========================================= -->
+
+<div class="stars">
+
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+
+</div>
+
+
+<!-- =========================================
+     FLOATING HEARTS
+========================================= -->
+
+<div class="hearts">
+
+    <div class="heart">❤️</div>
+
+    <div class="heart">💗</div>
+
+    <div class="heart">💕</div>
+
+    <div class="heart">❤️</div>
+
+    <div class="heart">💖</div>
+
+</div>
+
+
+<!-- =========================================
+     SONGS
+========================================= -->
+
+<audio
+    id="introSong"
+    src="intro-song.mp3"
+    preload="auto">
+</audio>
+
+
+<audio
+    id="photoSong"
+    src="photo-song.mp3"
+    preload="auto">
+</audio>
+
+
+<audio
+    id="letterSong"
+    src="letter-song.mp3"
+    preload="auto">
+</audio>
+
+
+<audio
+    id="proposalSong"
+    src="proposal-song.mp3"
+    preload="auto">
+</audio>
+
+
+<audio
+    id="feelingsSong"
+    src="feelings-song.mp3"
+    preload="auto">
+</audio>
+
+
+<!-- =========================================
+     PAGE 1
+========================================= -->
+
+<section
+    class="page active"
+    id="page1">
+
+    <div class="card">
+
+        <div class="intro-heart">
+            ❤️
+        </div>
+
+
+        <div class="small-title">
+            A LITTLE SURPRISE FOR YOU
+        </div>
+
+
+        <h1>
+            Heyyy loosu... ❤️
+        </h1>
+
+
+        <p class="subtitle">
+            Unakkaga oru small surprise irukku... 🥹✨
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="startExperience()">
+
+            Open it ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 2 - PHOTOS
+========================================= -->
+
+<section
+    class="page"
+    id="page2">
+
+    <div class="card">
+
+        <div class="small-title">
+            SOMEONE SPECIAL
+        </div>
+
+
+        <h2>
+            Just You... ❤️
+        </h2>
+
+
+        <p class="photo-text">
+
+            Un photo-va paakumbodhu kooda,
+            enakku automatically smile varudhu. 🥹❤️
+
+            <br><br>
+
+            Unakku idhu just oru photo-ah irukkalam...
+            aana enakku nee romba special. 🫶🏻
+
+            <br><br>
+
+            So... indha little page full-ah unakkaga. ❤️
+
+        </p>
+
+
+        <div class="photos">
+
+
+            <div class="photo-box">
+
+                <img
+                    src="photo1.jpg"
+                    alt="Photo 1"
+                    onclick="openImage(this.src)">
+
+            </div>
+
+
+            <div class="photo-box">
+
+                <img
+                    src="photo2.jpg"
+                    alt="Photo 2"
+                    onclick="openImage(this.src)">
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="openLetter()">
+
+            Next ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 3 - LOVE LETTER
+========================================= -->
+
+<section
+    class="page"
+    id="page3">
+
+    <div class="card">
+
+        <div class="small-title">
+            FROM MY HEART
+        </div>
+
+
+        <h2>
+            One Thing I Wanted To Tell You... 💌
+        </h2>
+
+
+        <div class="letter">
+
+<p>
+Heyyy loosu… ❤️
+
+Enna sollrathunu therila…
+
+Aana romba naala en mind-la irukura oru vishayatha innikku un kitta sollanum nu thonuchu.
+
+First time unna paatha appo, nee en life-la ivlo important person ah maaruva nu naan nenachave illa.
+
+Konjam konjama un kooda pesurathu, un kooda spend panna time, unoda chinna chinna things ellame enakku romba pidikka aarambichiduchu. 🥹❤️
+
+Sometimes namma rendu perum pesama irukalam…
+
+Sometimes misunderstandings varalam…
+
+Sometimes life-la enna nadakkumnu namakkey theriyama irukalam…
+
+Aana onnu mattum true…
+
+Naan unna love panradhu mattum maaradhu. ❤️
+
+Un kooda irukkumbodhu naan happy-ah feel panren.
+
+Un kitta edhavadhu share pannanum nu thonum.
+
+Oru naal full-ah pesama irundhaalum, somehow unna pathi yosichite iruppen. 😭
+
+Nee perfect person nu naan sollala…
+
+Naanum perfect illa.
+
+Aana un imperfections kooda accept pannitu, un kooda irukanum nu dhaan aasapadren. ❤️
+
+Unakku life-la happy moments varumbodhu, adha un kooda celebrate panna naan irukanum.
+
+Unakku kashtama irukkumbodhu, “Enna aachu?” nu kekka oru aal ah naan irukanum.
+
+Nee tired-ah irukkumbodhu konjam pesi sirikka vaikka naan irukanum.
+
+Nee edhavadhu achieve pannumbodhu,
+
+“Naan sonnen la, nee kandippa pannuva nu”
+
+nu proud-ah solla naan irukanum. 🫶🏻
+
+And honestly…
+
+Un life-la naan oru temporary person-ah irukka virumbala.
+
+Unakku konjam distance venumna naan respect pannuven.
+
+Unakku time venumna naan wait pannuven.
+
+Aana en heart-la irukkuradha sollama irukka mudiyala…
+
+I LOVE YOU. ❤️
+
+And yes…
+
+I want you.
+
+Not just for today…
+
+Not just for a few months…
+
+I want to see where this life takes us together. 🥹❤️
+</p>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="openVideo()">
+
+            There's one more thing... 🎬
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 4 - VIDEO
+========================================= -->
+
+<section
+    class="page"
+    id="page4">
+
+    <div class="card">
+
+        <div class="small-title">
+            JUST WATCH THIS... ❤️
+        </div>
+
+
+        <h2>
+            A Little Something For You 🎬
+        </h2>
+
+
+        <p>
+            Take a moment... just watch it. 🥹❤️
+        </p>
+
+
+        <div class="video-container">
+
+            <video
+                id="myVideo"
+                controls
+                playsinline
+                preload="metadata">
+
+                <source
+                    src="my-video.mp4"
+                    type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="openProposal()">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 5 - PROPOSAL
+========================================= -->
+
+<section
+    class="page"
+    id="page5">
+
+    <div class="card">
+
+        <div class="ring">
+            💍
+        </div>
+
+
+        <div class="small-title">
+            SO... HERE IT IS
+        </div>
+
+
+        <h1>
+            Will You Be Mine? ❤️
+        </h1>
+
+
+        <p class="proposal-text">
+
+            I don't need a perfect answer...
+
+            <br>
+
+            I just want your honest heart. 🥹❤️
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="goToFeelings()">
+
+            YES ❤️
+
+        </button>
+
+
+        <button
+            class="btn secondary"
+            onclick="goToFeelings()">
+
+            Let me think... 🥹
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 6 - FEELINGS
+========================================= -->
+
+<section
+    class="page"
+    id="page6">
+
+    <div class="card">
+
+        <div class="small-title">
+            NOW IT'S YOUR TURN
+        </div>
+
+
+        <h2>
+            Ippo un turn da... ❤️
+        </h2>
+
+
+        <p>
+
+            Ivlo neram naan en heart-la irundhadha
+            un kitta solliten... 🥹❤️
+
+            <br><br>
+
+            Idha paathu mudichadhuku apram
+            unakku enna feel aachu nu enakku theriyanum.
+
+            <br><br>
+
+            Happy-ah irundhiya?
+            Emotional-ah aacha?
+            Shock aayitiya? 😅❤️
+
+            <br><br>
+
+            Un mind-la enna irukko,
+            adha apdiye sollu...
+
+            <br><br>
+
+            Naan un answer-a judge panna maaten.
+
+            Just... unmaiya sollu. 🫶🏻
+
+        </p>
+
+
+        <div class="feeling-box">
+
+            <!--
+                FIRST CLICK:
+                Opens Google Form.
+
+                AFTER RETURN:
+                Same button becomes
+                I replied ❤️
+            -->
+
+            <button
+                class="btn"
+                id="replyButton"
+                onclick="handleReplyButton()">
+
+                En kitta sollu 💌
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 7 - FINAL
+========================================= -->
+
+<section
+    class="page"
+    id="page7">
+
+    <div class="card">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+
+        <div class="small-title">
+            ONE LAST THING
+        </div>
+
+
+        <h2>
+            Thank You For Telling Me... 🥹
+        </h2>
+
+
+        <p class="final-text">
+
+            Whatever your answer is,
+            thank you for being honest with me. ❤️
+
+            <br><br>
+
+            Naan un answer-a respect pannuven.
+
+            <br><br>
+
+            Un life-la naan oru special place
+            occupy panren nu feel panradhe
+            enakku romba special. 🫶🏻
+
+            <br><br>
+
+            Take care of yourself, loosu... ❤️
+
+            <br><br>
+
+            Love you. ❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     IMAGE MODAL
+========================================= -->
+
+<div
+    class="image-modal"
+    id="imageModal">
+
+
+    <span
+        class="close-modal"
+        onclick="closeImage()">
+
+        ×
+
+    </span>
+
+
+    <img
+        id="modalImage"
+        src=""
+        alt="Full image">
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================
+   AUDIO
+========================================= */
+
+const introSong =
+    document.getElementById("introSong");
+
+
+const photoSong =
+    document.getElementById("photoSong");
+
+
+const letterSong =
+    document.getElementById("letterSong");
+
+
+const proposalSong =
+    document.getElementById("proposalSong");
+
+
+const feelingsSong =
+    document.getElementById("feelingsSong");
+
+
+const allSongs = [
+
+    introSong,
+
+    photoSong,
+
+    letterSong,
+
+    proposalSong,
+
+    feelingsSong
+
+];
+
+
+/* =========================================
+   FORM STATUS
+========================================= */
+
+/*
+   false = button says
+   "En kitta sollu 💌"
+
+   true = button says
+   "I replied ❤️"
+*/
+
+let formOpened = false;
+
+
+/* =========================================
+   STOP ALL SONGS
+========================================= */
+
+function stopAllSongs(){
+
+    allSongs.forEach(function(song){
+
+        song.pause();
+
+        song.currentTime = 0;
+
+    });
+
+}
+
+
+/* =========================================
+   PLAY SONG
+========================================= */
+
+function playSong(song){
+
+    stopAllSongs();
+
+    song.volume = 0.75;
+
+    song.play().catch(function(){
+
+        console.log(
+            "Browser blocked autoplay."
+        );
+
+    });
+
+}
+
+
+/* =========================================
+   INTRO SONG
+========================================= */
+
+/*
+   Website open aagumbodhe
+   intro song play try pannum.
+*/
+
+window.addEventListener(
+    "load",
+    function(){
+
+        introSong.volume = 0.75;
+
+        introSong.play()
+        .then(function(){
+
+            console.log(
+                "INTRO SONG PLAYING ❤️"
+            );
+
+        })
+        .catch(function(){
+
+            console.log(
+                "Browser blocked autoplay."
+            );
+
+        });
+
+    }
+);
+
+
+/* =========================================
+   SHOW PAGE
+========================================= */
+
+function showPage(number){
+
+    document
+    .querySelectorAll(".page")
+    .forEach(function(page){
+
+        page.classList.remove("active");
+
+    });
+
+
+    const selectedPage =
+        document.getElementById(
+            "page" + number
+        );
+
+
+    if(selectedPage){
+
+        selectedPage.classList.add(
+            "active"
+        );
+
+    }
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* =========================================
+   OPEN IT
+========================================= */
+
+function startExperience(){
+
+    /*
+       If browser blocked intro autoplay,
+       this click starts intro song.
+    */
+
+    if(introSong.paused){
+
+        introSong.volume = 0.75;
+
+        introSong.play()
+        .catch(function(){});
+
+    }
+
+
+    /*
+       Move to photo page.
+    */
+
+    setTimeout(function(){
+
+        introSong.pause();
+
+        introSong.currentTime = 0;
+
+        playSong(photoSong);
+
+        showPage(2);
+
+    },300);
+
+}
+
+
+/* =========================================
+   LETTER
+========================================= */
+
+function openLetter(){
+
+    playSong(letterSong);
+
+    showPage(3);
+
+}
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+function openVideo(){
+
+    /*
+       Stop every song.
+    */
+
+    stopAllSongs();
+
+
+    const video =
+        document.getElementById(
+            "myVideo"
+        );
+
+
+    if(video){
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    }
+
+
+    showPage(4);
+
+
+    /*
+       Start video.
+    */
+
+    if(video){
+
+        video.play()
+        .catch(function(){});
+
+    }
+
+}
+
+
+/* =========================================
+   PROPOSAL
+========================================= */
+
+function openProposal(){
+
+    const video =
+        document.getElementById(
+            "myVideo"
+        );
+
+
+    if(video){
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    }
+
+
+    playSong(proposalSong);
+
+    showPage(5);
+
+}
+
+
+/* =========================================
+   YES / LET ME THINK
+========================================= */
+
+function goToFeelings(){
+
+    /*
+       Proposal song stop.
+
+       Feelings song start.
+    */
+
+    playSong(feelingsSong);
+
+    showPage(6);
+
+}
+
+
+/* =========================================
+   GOOGLE FORM / I REPLIED
+========================================= */
+
+function handleReplyButton(){
+
+    const button =
+        document.getElementById(
+            "replyButton"
+        );
+
+
+    /*
+       FIRST CLICK
+       ==========================
+
+       Open Google Form.
+    */
+
+    if(formOpened === false){
+
+        formOpened = true;
+
+
+        window.open(
+
+            "https://docs.google.com/forms/d/e/1FAIpQLSc71a-FDYOcvy80wQQqN1RU_F_TB-Id7K-MGwqT_aopd-Jqbw/viewform",
+
+            "_blank"
+
+        );
+
+
+        /*
+           Same button changes.
+        */
+
+        button.innerHTML =
+            "I replied ❤️";
+
+
+        return;
+
+    }
+
+
+    /*
+       SECOND CLICK
+       ==========================
+
+       This means the user has
+       returned after submitting
+       the Google Form.
+
+       Feelings song plays.
+
+       Then final page.
+    */
+
+    feelingsSong.volume = 0.75;
+
+
+    if(feelingsSong.paused){
+
+        feelingsSong.play()
+        .catch(function(){});
+
+    }
+
+
+    showPage(7);
+
+}
+
+
+/* =========================================
+   IMAGE OPEN
+========================================= */
+
+function openImage(src){
+
+    const modal =
+        document.getElementById(
+            "imageModal"
+        );
+
+
+    const image =
+        document.getElementById(
+            "modalImage"
+        );
+
+
+    image.src = src;
+
+
+    modal.classList.add(
+        "active"
+    );
+
+}
+
+
+/* =========================================
+   IMAGE CLOSE
+========================================= */
+
+function closeImage(){
+
+    document
+    .getElementById(
+        "imageModal"
+    )
+    .classList.remove(
+        "active"
+    );
+
+}
+
+
+/* =========================================
+   CLICK OUTSIDE IMAGE
+========================================= */
+
+document
+.getElementById(
+    "imageModal"
+)
+.addEventListener(
+    "click",
+    function(event){
+
+        if(event.target === this){
+
+            closeImage();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   ESCAPE KEY
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            closeImage();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
